@@ -8,8 +8,12 @@
 .square{
     width: 30px;
     height: 30px;
-    background-color: rgb(185, 230, 173);
+    background-color: rgba(192, 224, 184, 0.367);
     border: 1px solid rgb(128, 128, 128);
     display: inline-block;
+}
+
+.square:hover{
+    background-color: rgb(241, 36, 0);
 }
 
