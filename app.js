@@ -8,7 +8,6 @@ function createGrid(rows,cols){
             square.classList.add('square')
             mainContainer.appendChild(square);
         }
-        mainContainer.appendChild(document.createElement("br"));
     }
 }
 
