@@ -1,3 +1,7 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
 /* :root {
     --max-grid-width: 510px;
 }
@@ -23,9 +27,158 @@
 } */
 
 
+h1 {
+    font-family: 'cursive', sans-serif; /* Choose an appropriate font-family */
+    color: #3498db; /* Change the text color */
+    font-size: 2.5em; /* Adjust the font size */
+    text-align: center; /* Center the text */
+    margin-top: 20px; /* Add some top margin */
+    animation: bounce 2s ease infinite; /* Add a bounce animation */
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
 .board{
     width: 500px;
     height: 500px;
     display: grid;
+    border: 3px solid rgb(255, 0, 0);
 }
 
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+
+
+/* CSS */
+.btn {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  align-items: center;
+  background-color: #3498db;
+  border: 0;
+  border-radius: 100px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: -apple-system, system-ui, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 20px;
+  max-width: 480px;
+  min-height: 40px;
+  min-width: 0px;
+  overflow: hidden;
+  padding: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  touch-action: manipulation;
+  transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+}
+
+.btn:hover,
+.btn:focus { 
+  background-color: #7e8998;
+  color: #ffffff;
+}
+
+.btn:active {
+  background: #09223b;
+  color: rgb(255, 255, 255, .7);
+}
+
+.btn:disabled { 
+  cursor: not-allowed;
+  background: rgba(0, 0, 0, .08);
+  color: rgba(0, 0, 0, .3);
+}
+
+.buttons{
+    display: flex;
+    width: 500px;
+    justify-content: space-between;
+}
+
+input[type="text"] {
+    width: 100px; /* Adjust the width as needed */
+    padding: 5px; /* Add padding to the text input */
+    border: 1px solid #ccc; /* Add a border */
+    border-radius: 5px; /* Add rounded corners */
+    font-size: 16px; /* Set the font size */
+    outline: none; /* Remove the default outline */
+}
+
+/* CSS for the placeholder text */
+input[type="text"]::placeholder {
+    color: #999; /* Change the color of the placeholder text */
+}
+
+.btn2{
+  align-items: center;
+  background-color: #3498db;
+  border: 0;
+  border-radius: 100px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: -apple-system, system-ui, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 20px;
+  max-width: 480px;
+  min-height: 40px;
+  min-width: 0px;
+  overflow: hidden;
+  padding: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  touch-action: manipulation;
+  transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+}
+
+.btn2:hover,
+.btn2:focus { 
+  background-color: #16437E;
+  color: #ffffff;
+}
+
+.btn2:active {
+  background: #09223b;
+  color: rgb(255, 255, 255, .7);
+}
+
+.btn2:disabled { 
+  cursor: not-allowed;
+  background: rgba(0, 0, 0, .08);
+  color: rgba(0, 0, 0, .3);
+
+}
