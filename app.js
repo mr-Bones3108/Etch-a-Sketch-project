@@ -55,7 +55,7 @@ function changeSize(newSize) {
     if (newSize >= 2 && newSize <= 64) {
         makeGrid(newSize,color);
     } else {
-        console.log("Size is not within the valid range (2-64)!!");
+        alert("Size is not within the valid range (2-64)!!");
     }
 }
 
